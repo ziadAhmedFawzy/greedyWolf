@@ -70,3 +70,21 @@ input:focus {
     background-color: #ccc;
     color: #111;
 }
+
+@media screen and (max-width: 950px) {
+    .duo img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .duo img {
+        width: 250px;
+    }
+    .container .display {
+        height: 300px;
+    }
+    .container .display p {
+        font-size: 100px;
+    }
+}
