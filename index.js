@@ -32,10 +32,16 @@ GO.addEventListener("click", function() {
         guessing.value = '';
         moneyFeild.value = '';
         localStorage.setItem("money", +acc + prizeNumber);
+        setTimeout(function() {
+            location.reload()
+        }, 3100)
     }
     else {
         localStorage.setItem("money", acc - moneyFeild.value);
         guessing.value = '';
         moneyFeild.value = '';
+        setTimeout(function() {
+            location.reload()
+        }, 3100)
     }
 })
