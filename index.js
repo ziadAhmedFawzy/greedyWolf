@@ -5,15 +5,14 @@ let COUNT = document.getElementById("COUNT");
 let account = document.getElementById("account");
 let prize = document.getElementById("prize");
 
+// delete this is to play
+localStorage.setItem("money", 3000);
 
 let acc = localStorage.getItem("money");
 let prizeNumber = Math.ceil(Math.random() * 20);
 
-
-
 account.innerHTML = acc + " $";
 prize.innerHTML = prizeNumber; 
-
 
 // function to give random number
 function randomNumber(max) {
